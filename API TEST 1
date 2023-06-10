@@ -1,3 +1,11 @@
+/* Modified code of API TEST 1 to successfully send.
+Simple envelope creation
+Changes documented in-line
+Author: Andrew Houser
+Date: June 10, 2023
+V 1
+*/
+
 {
   "recipients": {
     "signers": [
@@ -11,23 +19,23 @@
             {
               "xPosition": "100",
               "yPosition": "100",
-              "documentId": "1",
+              "documentId": "1", //updated from 2 to 1 to match below document
               "pageNumber": "1"
             }
           ]
         }
       },
       {
-        "email": "andrew.w.houser@gmail.com",
+        "email": "theBatMan@WayneEnterprises.com", //added sample email address
         "name": "Bruce Wayne",
-        "recipientId": 2, 
+        "recipientId": 2, //changed from 1 to 2 to differentiate recipients
         "tabs": {
           "signHereTabs": [
             {
-              "xPosition": "95",
+              "xPosition": "95", //removed "-" value here
               "yPosition": "48",
               "documentId": "1", 
-              "pagenumber": "1"
+              "pagenumber": "1" //changed from 2 to 1 (document is only 1 page long)
             }]
         }
       }
@@ -37,9 +45,9 @@
     {
       "documentId": "1",
       "name": "blank1.pdf",
-      "documentBase64": "{{document}}"
+      "documentBase64": "{{document}}" //variable saved within Postman
     }
   ],
   "status": "sent",
-  "emailSubject": "Simple Signing Example"
+  "emailSubject": "Simple Signing Example" //added emailSubject field
 }
