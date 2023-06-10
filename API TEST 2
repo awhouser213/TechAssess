@@ -1,13 +1,19 @@
-
+/* Modified code of API TEST 2 to successfully send.
+Requires further functional discussion with origianl author to determine inteded use
+Example: 1 envelope with 2 documents, we want to demonstrate excluding recipient from 1 of the documents
+Author: Andrew Houser
+Date: June 10, 2023
+V 1
+*/
 {
-  "enforceSignerVisibility": true,
+  "enforceSignerVisibility": true, //parameter typically meant to exclude recipients from viewing documents
   "recipients": {
     "signers": [
       {
-        "email": "andrew.w.houser@gmail.com",
+        "email": "theflash@jakedstest.xyz",
         "name": "Barry Allen",
         "recipientId": 1,
-       // "routingOrder": 1,
+       // "routingOrder": 1, //code required for alternative interpretation-creating a routing order
         "accessCode": "98371",
         "tabs": {
           "signHereTabs": [
@@ -21,11 +27,11 @@
         }
       },
       {
-        "email": "awhouser213@gmail.com",
+        "email": "iamthebatman@jakedstest.xyz",
         "name": "Bruce Wayne",
         "recipientId": 2,
-       // "routingOrder": 2,
-        "excludedDocuments": [1],
+       // "routingOrder": 2, //code required for alternative interpretation-creating a routing order
+        "excludedDocuments": [1], //exclude Bruce Wayne from seeing document 1
         "tabs": {
           "signHereTabs": [
             {
