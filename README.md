@@ -3,7 +3,7 @@ DocuSign Tech Assessment
 
 The following repository contains the solutions for Andrew Houser’s technical assessment for DocuSign’s Technical Customer Success Manager (“TCSM”) position.
 
-Original assessment is available here:
+Original repository is available here:
 https://github.com/DS-CSE/TechAssess
 
 Technical Assessment
